@@ -13,7 +13,7 @@ Vagrant.configure(2) do |config|
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
   config.vm.box = "centos-6.5-x86_64"
-  config.vm.hostname = "mahesh.example.com"
+  config.vm.hostname = "server.example.com"
   config.vm.network "private_network", type: "dhcp"
   config.vm.network :forwarded_port, guest: 22, host: 2221, auto_correct: true
   config.vm.provision :shell, :path => "vagrant-data/provision.sh"
